@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+    
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:weightSum="100"
+      android:orientation="horizontal">
+  <!-- Receipt Id-->
+  
+  <TextView 
+      		
+      		android:id="@+id/tvReceiptId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:textStyle="bold"
+           />
+  
+  
+  <!-- Restaurant Name -->
+  <TextView android:id="@+id/tvRestaurantName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"         
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            
+            android:textColor="#43bd00"
+            android:textStyle="italic"
+        	android:layout_weight="10"    
+            />
+  
+  </LinearLayout>
+  
+  
+  <LinearLayout  
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:weightSum="100"
+      >
+  <!-- Total Amount  -->
+   <TextView 
+   			android:text="Total Amount:"
+      		android:layout_width="match_parent"
+      		android:layout_height="wrap_content"
+      		android:textStyle="bold"
+      		android:layout_weight="50"
+      		/>
+   
+  <TextView android:id="@+id/tvReceiptTotal"
+      		android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:layout_weight="50"/>
+  </LinearLayout>
+</LinearLayout>
